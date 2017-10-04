@@ -1,0 +1,56 @@
+.appLogo {
+    background-image: url(./logo.png);
+    width: 195px;
+    height: 75px;
+    background-size: 75% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -5px;
+}
+.pageTop {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    background: black;
+}
+.pageTitle {
+    flex: 2;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -50px;
+}
+.pageActions {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.ratingsApp {
+    padding-top: 75px;
+}
+.action {
+    color: rgb(3, 169, 244);
+    cursor: pointer;
+    padding: 2px;
+}
+.action:hover {
+    text-decoration: none;
+}
+.action:after {
+    content: '|';
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+.action:last-child:after {
+    content: '';
+}
+.action.active {
+    cursor: text;
+    text-decoration: none;
+    color: #ddd;
+}

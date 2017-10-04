@@ -1,0 +1,45 @@
+.moviesList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.movieRatingDetails {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    transition: width 0.1s;
+    width: 0px;
+    z-index: 2;
+}
+.movieRatingDetails:focus {
+    outline: none;
+}
+.movieRatingDetails.open {
+    width: 340px;
+    background: #212121;
+}
+.movieRatingDetails .close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+.movieRatingDetailsText {
+    padding: 10px
+}
+.movieRatingDetailsText > div {
+    margin: 10px;
+}
+.loader {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+.loaderMore {
+    text-align: center;
+}
